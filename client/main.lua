@@ -57,7 +57,7 @@ end)
 
 RegisterNUICallback('checkItem', function(data, cb)
     local retval = false
-    QBCore.Functions.TriggerCallback('QBCore:HasItem', function(result)
+    QBCore.Functions.TriggerCallback('QBCore.Functions.HasItem', function(result) --[[CHANGED FOR UPDATE USED TO BE QBCore:HasItem]]
         if result then
             retval = true
         end
